@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <Encoding>UTF-8</Encoding>
+        <encoder>
+            <pattern>[%d{MMdd HH:mm:ss SSS\} %-5p] [%t] %c{3\} - %m%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- 控制台打印 -->
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>
